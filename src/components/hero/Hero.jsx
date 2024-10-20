@@ -21,8 +21,8 @@ scrollButton:{
     transition:{
         duration:2,
         repeat:Infinity,
-    }
-}
+    },
+},
 };
 
 const SliderVariants={
