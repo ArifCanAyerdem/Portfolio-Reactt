@@ -1,29 +1,37 @@
-.navbar{
+@import "../../app.scss";
 
-    height: 100px;
-}
+.navbar {
+  height: 100px;
 
-.wrapper{
+  .wrapper {
     max-width: 1366px;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 100px;
-}
+    height: 100%;
 
-span{
-    font-weight: bold;
+    @include mobile {
+      justify-content: flex-end;
+      padding: 20px;
+    }
 
-}
+    span {
+      font-weight: bold;
 
-.social{
+      @include mobile {
+        display: none;
+      }
+    }
 
-    display: flex;
-    gap: 10px;
-}
-img{
-    width: 18px;
-    height: 18px;
-    
+    .social {
+      display: flex;
+      gap: 20px;
+
+      img {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
 }
